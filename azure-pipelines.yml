@@ -49,10 +49,11 @@ stages:
     
     - task: PythonScript@0
       inputs:
-        scriptSource: 'filePath'
-        scriptPath: $(Build.SourcesDirectory)/run.py
-    - bash: python $(Build.SourcesDirectory)/run.py
-    - script: python $(Build.SourcesDirectory)/run.py
+        scriptSource: 'inline'
+        script: |
+          pip install -r requirements.txt
+          python $(projectRoot)/run.py
+        workingDirectory: $(projectRoot)
 
 
     - task: ArchiveFiles@2
