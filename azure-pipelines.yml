@@ -47,13 +47,12 @@ stages:
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
     
-    - task: PythonScript@0
-      inputs:
-        scriptSource: 'inline'
-        script: |
-          python $(projectRoot)/run.py
-        workingDirectory: $(projectRoot)
-
+    - script: |
+        pip install -r requirements.txt
+        python $(projectRoot)/run.py
+      workingDirectory: $(projectRoot)
+      displayName: "Run python script"
+      
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
