@@ -1,0 +1,95 @@
+2022-08-05 10:04:32,311  * Debugger is active!
+2022-08-05 10:04:32,311  * Debugger PIN: 821-490-013
+2022-08-05 10:04:32,420  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-05 10:05:17,554  * Debugger is active!
+2022-08-05 10:05:17,554  * Debugger PIN: 821-490-013
+2022-08-05 10:05:17,617  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-05 10:05:48,632 127.0.0.1 - - [05/Aug/2022 10:05:48] "GET / HTTP/1.1" 200 -
+2022-08-05 10:05:48,748 127.0.0.1 - - [05/Aug/2022 10:05:48] "GET /static/logo.png HTTP/1.1" 200 -
+2022-08-05 10:08:08,009  * Detected change in 'D:\\Flask_Test\\ordercleanup\\main\\routes.py', reloading
+2022-08-05 10:30:46,700  * Debugger is active!
+2022-08-05 10:30:46,716  * Debugger PIN: 821-490-013
+2022-08-05 10:30:46,769  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-05 10:31:05,931 127.0.0.1 - - [05/Aug/2022 10:31:05] "GET / HTTP/1.1" 200 -
+2022-08-05 10:31:06,016 127.0.0.1 - - [05/Aug/2022 10:31:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2022-08-05 10:31:10,388 127.0.0.1 - - [05/Aug/2022 10:31:10] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2022-08-05 10:31:10,426 127.0.0.1 - - [05/Aug/2022 10:31:10] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-08-05 10:31:10,457 127.0.0.1 - - [05/Aug/2022 10:31:10] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-08-05 10:31:10,489 127.0.0.1 - - [05/Aug/2022 10:31:10] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-08-05 10:31:10,507 127.0.0.1 - - [05/Aug/2022 10:31:10] "GET /test?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2022-08-05 10:32:19,473  * Detected change in 'D:\\Flask_Test\\ordercleanup\\main\\routes.py', reloading
+2022-08-05 10:59:56,024  * Debugger is active!
+2022-08-05 10:59:56,024  * Debugger PIN: 821-490-013
+2022-08-05 10:59:56,074  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-05 11:00:31,363 127.0.0.1 - - [05/Aug/2022 11:00:31] "GET / HTTP/1.1" 200 -
+2022-08-05 11:00:31,463 127.0.0.1 - - [05/Aug/2022 11:00:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2022-08-05 11:00:38,416 127.0.0.1 - - [05/Aug/2022 11:00:38] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2022-08-05 11:00:38,438 127.0.0.1 - - [05/Aug/2022 11:00:38] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-08-05 11:00:38,438 127.0.0.1 - - [05/Aug/2022 11:00:38] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-08-05 11:00:38,454 127.0.0.1 - - [05/Aug/2022 11:00:38] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-08-05 11:00:38,454 127.0.0.1 - - [05/Aug/2022 11:00:38] "GET /test?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2022-08-05 11:01:38,266  * Detected change in 'D:\\Flask_Test\\ordercleanup\\main\\routes.py', reloading
+2022-08-05 11:01:42,598  * Debugger is active!
+2022-08-05 11:01:42,598  * Debugger PIN: 821-490-013
+2022-08-05 11:01:42,641  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-05 11:01:53,978 127.0.0.1 - - [05/Aug/2022 11:01:53] "GET /test HTTP/1.1" 200 -
+2022-08-05 11:16:20,562  * Detected change in 'D:\\Flask_Test\\ordercleanup\\main\\routes.py', reloading
+2022-08-05 11:25:31,910  * Debugger is active!
+2022-08-05 11:25:31,927  * Debugger PIN: 821-490-013
+2022-08-05 11:25:31,963  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-05 11:25:58,474 127.0.0.1 - - [05/Aug/2022 11:25:58] "GET / HTTP/1.1" 200 -
+2022-08-05 11:25:58,559 127.0.0.1 - - [05/Aug/2022 11:25:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2022-08-08 12:22:12,967  * Debugger is active!
+2022-08-08 12:22:12,983  * Debugger PIN: 821-490-013
+2022-08-08 12:22:13,036  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:22:33,877 127.0.0.1 - - [08/Aug/2022 12:22:33] "GET / HTTP/1.1" 200 -
+2022-08-08 12:22:34,193 127.0.0.1 - - [08/Aug/2022 12:22:34] "GET /static/logo.png HTTP/1.1" 200 -
+2022-08-08 12:22:34,278 127.0.0.1 - - [08/Aug/2022 12:22:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-08-08 12:22:43,915 127.0.0.1 - - [08/Aug/2022 12:22:43] "GET /test HTTP/1.1" 200 -
+2022-08-08 12:23:24,812  * Detected change in 'D:\\Flask_Test\\ordercleanup\\api_func\\cleanup.py', reloading
+2022-08-08 12:27:09,505  * Debugger is active!
+2022-08-08 12:27:09,523  * Debugger PIN: 821-490-013
+2022-08-08 12:27:09,574  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:27:27,515  * Detected change in 'D:\\Flask_Test\\ordercleanup\\api_func\\cleanup.py', reloading
+2022-08-08 12:27:35,455  * Debugger is active!
+2022-08-08 12:27:35,455  * Debugger PIN: 821-490-013
+2022-08-08 12:27:35,524  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:28:20,741  * Detected change in 'D:\\Flask_Test\\ordercleanup\\api_func\\cleanup.py', reloading
+2022-08-08 12:29:33,539  * Debugger is active!
+2022-08-08 12:29:33,539  * Debugger PIN: 821-490-013
+2022-08-08 12:29:33,592  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:30:25,902  * Debugger is active!
+2022-08-08 12:30:25,902  * Debugger PIN: 821-490-013
+2022-08-08 12:30:25,949  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:30:48,030  * Detected change in 'D:\\Flask_Test\\ordercleanup\\api_func\\cleanup.py', reloading
+2022-08-08 12:31:08,692  * Debugger is active!
+2022-08-08 12:31:08,708  * Debugger PIN: 821-490-013
+2022-08-08 12:31:08,763  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:31:27,362 127.0.0.1 - - [08/Aug/2022 12:31:27] "GET / HTTP/1.1" 200 -
+2022-08-08 12:31:27,469 127.0.0.1 - - [08/Aug/2022 12:31:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2022-08-08 12:32:02,354  * Detected change in 'D:\\Flask_Test\\ordercleanup\\api_func\\cleanup.py', reloading
+2022-08-08 12:41:59,580  * Debugger is active!
+2022-08-08 12:41:59,582  * Debugger PIN: 821-490-013
+2022-08-08 12:41:59,632  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:58:06,503  * Debugger is active!
+2022-08-08 12:58:06,503  * Debugger PIN: 821-490-013
+2022-08-08 12:58:06,565  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:59:33,645  * Debugger is active!
+2022-08-08 12:59:33,645  * Debugger PIN: 821-490-013
+2022-08-08 12:59:33,711  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 12:59:41,860 127.0.0.1 - - [08/Aug/2022 12:59:41] "GET / HTTP/1.1" 200 -
+2022-08-08 12:59:41,945 127.0.0.1 - - [08/Aug/2022 12:59:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2022-08-08 13:00:38,633 127.0.0.1 - - [08/Aug/2022 13:00:38] "GET /report HTTP/1.1" 200 -
+2022-08-08 13:03:31,661 127.0.0.1 - - [08/Aug/2022 13:03:31] "[33mGET /fsfgg HTTP/1.1[0m" 404 -
+2022-08-08 13:07:45,181  * Detected change in 'D:\\Flask_Test\\ordercleanup\\utils.py', reloading
+2022-08-08 13:34:17,403  * Debugger is active!
+2022-08-08 13:34:17,403  * Debugger PIN: 821-490-013
+2022-08-08 13:34:17,469  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 13:34:38,659 127.0.0.1 - - [08/Aug/2022 13:34:38] "GET /error HTTP/1.1" 200 -
+2022-08-08 13:39:22,444  * Detected change in 'D:\\Flask_Test\\ordercleanup\\main\\routes.py', reloading
+2022-08-08 13:49:18,735  * Debugger is active!
+2022-08-08 13:49:18,735  * Debugger PIN: 821-490-013
+2022-08-08 13:49:18,801  * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2022-08-08 13:49:42,641 127.0.0.1 - - [08/Aug/2022 13:49:42] "GET / HTTP/1.1" 200 -
+2022-08-08 13:49:42,763 127.0.0.1 - - [08/Aug/2022 13:49:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2022-08-08 13:49:59,461 127.0.0.1 - - [08/Aug/2022 13:49:59] "GET /error HTTP/1.1" 200 -

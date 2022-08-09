@@ -1,0 +1,9 @@
+Flask
+Flask-Mail
+Flask-SQLAlchemy
+pymssql
+PyMySQL
+python-dotenv
+SQLAlchemy
+XlsxWriter
+bcrypt
