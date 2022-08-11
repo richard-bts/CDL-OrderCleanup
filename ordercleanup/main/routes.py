@@ -88,17 +88,3 @@ def get_report():
     mail.send(msg)
 
     return render_template('success.html')
-
-
-@main.route("/scans", methods=['GET', 'POST'])
-def test_scans():
-    return {'result': get_orderscans()}
-
-
-@main.route("/master", methods=['GET', 'POST'])
-def master_list():
-    return {'result': get_master_list, 'env': config.TESTING}
-
-@main.route("/test", methods=['GET', 'POST'])
-def test_config():
-    return {'env': config.TESTING}
