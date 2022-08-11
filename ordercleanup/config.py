@@ -46,18 +46,18 @@ class Config:
 
 
 class DevelopmentConfig(Config):
-    print("DEV")
     DEBUG = True
+    TESTING = False
     SQLALCHEMY_DATABASE_URI = os.getenv("DEV_DATABASE_URL")
 
 
 class TestingConfig(Config):
-    print("Test")
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.getenv("TEST_DATABASE_URL")
 
 
 class ProductionConfig(Config):
+    TESTING = False
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL") 
    
 
@@ -68,3 +68,5 @@ config = {
     'production': ProductionConfig,
     'default': DevelopmentConfig
 }
+
+config = config[os.getenv('FLASK_ENV')]

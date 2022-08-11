@@ -6,5 +6,4 @@ PyMySQL
 python-dotenv
 SQLAlchemy
 XlsxWriter
-bcrypt
 Werkzeug==2.0.0

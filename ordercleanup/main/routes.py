@@ -4,7 +4,9 @@ from sqlalchemy import Date
 from ordercleanup.api_func.cleanup import (
     add_orders_to_route,
     add_status_code_and_change_log, 
-    update_driver_id
+    update_driver_id, 
+    get_orderscans, 
+    get_master_list
 )
 from ordercleanup import mail
 from ordercleanup.config import config
@@ -14,7 +16,7 @@ import xlsxwriter
 import os
 
 main = Blueprint('main', __name__)
-config = config['development']
+# config = config['development']
 
 
 @main.route("/")
@@ -88,3 +90,12 @@ def get_report():
 
     return render_template('success.html')
 
+
+@main.route("/scans", methods=['GET', 'POST'])
+def test_scans():
+    return {'result': get_orderscans()}
+
+
+@main.route("/master", methods=['GET', 'POST'])
+def master_list():
+    return {'result': get_master_list, 'env': config.TESTING}

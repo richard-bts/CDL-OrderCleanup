@@ -15,7 +15,7 @@ from datetime import datetime
 
 
 # #config variables 
-config = config['development']
+# config = config['development']
 threshold =  config.THRESHOLD
 status = config.STATUS
 route_id = config.ROUTE_ID
@@ -42,7 +42,7 @@ total_change_logs = []
 
 def get_orderscans():
     order_scans = db.session.query(OrderScans.OrderTrackingID)
-    return order_scans
+    return order_scans.all()
 
 def get_master_list():
     master_order_list = []
