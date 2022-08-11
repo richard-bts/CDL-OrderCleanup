@@ -5,7 +5,6 @@ from ordercleanup.config import config
 
 import os
 
-# config = config['development']
 def send_error_email():
     file_name = 'error.log'
     today = datetime.today()

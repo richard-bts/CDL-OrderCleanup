@@ -174,3 +174,7 @@ Traceback (most recent call last):
     
 sqlalchemy.exc.OperationalError: (pymssql._pymssql.OperationalError) (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (172.24.32.210)\nNet-Lib error during Unknown error (10060)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (172.24.32.210)\nNet-Lib error during Unknown error (10060)\n')
 (Background on this error at: http://sqlalche.me/e/e3q8)
+2022-08-11 10:15:30,584  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-08-11 10:16:45,872 127.0.0.1 - - [11/Aug/2022 10:16:45] "GET /test HTTP/1.1" 200 -
+2022-08-11 10:17:56,369  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-08-11 10:18:03,422 127.0.0.1 - - [11/Aug/2022 10:18:03] "GET /test HTTP/1.1" 200 -

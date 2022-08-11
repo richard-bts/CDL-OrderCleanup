@@ -15,7 +15,6 @@ from datetime import datetime
 
 
 # #config variables 
-# config = config['development']
 threshold =  config.THRESHOLD
 status = config.STATUS
 route_id = config.ROUTE_ID

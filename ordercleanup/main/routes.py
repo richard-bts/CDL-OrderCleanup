@@ -16,7 +16,6 @@ import xlsxwriter
 import os
 
 main = Blueprint('main', __name__)
-# config = config['development']
 
 
 @main.route("/")
@@ -99,3 +98,7 @@ def test_scans():
 @main.route("/master", methods=['GET', 'POST'])
 def master_list():
     return {'result': get_master_list, 'env': config.TESTING}
+
+@main.route("/test", methods=['GET', 'POST'])
+def test_config():
+    return {'env': config.TESTING}
