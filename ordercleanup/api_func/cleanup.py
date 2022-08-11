@@ -43,6 +43,11 @@ def get_orderscans():
     order_scans = db.session.query(OrderScans.OrderTrackingID)
     return order_scans
 
+def get_test_scans():
+    order_scans = db.session.query(OrderScans.OrderTrackingID)
+    order_scans = [r._asdict() for r in order_scans.limit(5)]
+    return order_scans
+    
 def get_master_list():
     master_order_list = []
     try:
