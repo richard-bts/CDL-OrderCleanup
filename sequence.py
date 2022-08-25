@@ -1,0 +1,28 @@
+import requests
+
+try:
+    response = requests.get('http://172.24.16.201:82/report')
+    response.raise_for_status()
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    file_path = os.path.join(dir_path, "lastreport.txt")
+    append_write = 'w' 
+    if os.path.exists(file_path):
+        append_write = 'a'
+        
+    with open(file_path, append_write) as f:
+        f.write(str(datetime.now()))
+        f.write('\n')
+    
+except requests.exceptions.HTTPError as error:
+    print(error)
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    file_path = os.path.join(dir_path, "lasterror.txt")
+    append_write = 'w' 
+    if os.path.exists(file_path):
+        append_write = 'a' 
+        
+    with open(file_path, append_write) as f:
+        f.write(str(datetime.now()))
+        f.write(str(error))
+        f.write('\n')
+ 
