@@ -4,7 +4,7 @@ Flask-SQLAlchemy
 pymssql
 PyMySQL
 python-dotenv
-SQLAlchemy
+SQLAlchemyy==1.3.23
 XlsxWriter
 Werkzeug==2.0.0
 requests

@@ -76,11 +76,11 @@ def add_orders_to_route():
     try:
         master_list = get_master_list()
         if len(master_list) > 0:
-        
+            dbquery = db.session.query(Orders.OrderTrackingID)
             for order in master_list: 
-                dbquery = db.session.query(Orders.RouteID, Orders.OrderTrackingID).filter(Orders.OrderTrackingID == order['OrderTrackingID'])
-                if dbquery is not None:
-                    dbquery = dbquery.update({'RouteID': route_id}, synchronize_session=False)
+                dbfill = dbquery.filter(Orders.OrderTrackingID == order['OrderTrackingID'])
+                if dbfill:
+                    dbfill.update({'RouteID': route_id})
                     total_order_routes.append(order['OrderTrackingID'])
             db.session.commit()
         print('ORDERS TO ROUTE: ', len(total_order_routes))
@@ -94,27 +94,26 @@ def update_driver_id():
         master_list = get_master_list()
         if len(master_list) > 0:
             new_order_drivers = []
+            dbquery = db.session.query(OrderDrivers.DriverID)
             for order in master_list: 
-                dbquery = db.session.query(OrderDrivers.DriverID,).filter(OrderDrivers.OrderTrackingID == order['OrderTrackingID'])
-                if len(dbquery.all()) > 0: 
-                    dbquery = db.session.query(OrderDrivers.DriverID).filter(OrderDrivers.OrderTrackingID == order['OrderTrackingID'])
-                    dbquery = dbquery.update({'DriverID': driver_id}, synchronize_session=False)
+                
+                dbfill = dbquery.filter(OrderDrivers.OrderTrackingID == order['OrderTrackingID'])
+                if dbfill: 
+                    dbfill = dbfill.update({'DriverID': driver_id})
                     total_order_driver.append(order['OrderTrackingID'])
                 else: 
                     """ If order not assigned, assign to driver """
-                    new_order = {}
-                    new_order['OrderTrackingID'] = order['OrderTrackingID']
-                    new_order['ArchiveLevel'] = archive_level 
-                    new_order['DriverID'] = driver_id
-                    new_order['Status'] = status
-                    new_order['isDefaultDriver'] = is_default_driver
-                    new_order['Pickup'] = pickup 
-                    new_order['Delivery'] = delivery
-                    new_order['UserID'] = user_id
-                    new_order_drivers.append(new_order)
+                    new_order_drver = OrderDrivers()
+                    setattr(new_order_drver, 'OrderTrackingID', order['OrderTrackingID'])
+                    setattr(new_order_drver, 'ArchiveLevel', archive_level)
+                    setattr(new_order_drver, 'DriverID', driver_id)
+                    setattr(new_order_drver, 'Status', status)
+                    setattr(new_order_drver, 'isDefaultDriver', is_default_driver)
+                    setattr(new_order_drver, 'Pickup',pickup)
+                    setattr(new_order_drver, 'Delivery',delivery)
+                    setattr(new_order_drver, 'UserID',user_id)
                     total_new_orders_to_driver.append(order['OrderTrackingID'])
-            if len(new_order_drivers) > 0:
-                db.session.bulk_insert_mappings(OrderDrivers, new_order_drivers)
+                    db.session.add(new_order_drver)
             db.session.commit()
             print('NEW DRIVER: ',len(total_new_orders_to_driver))
             print('UPDATED DRIVER: ', len(total_order_driver))

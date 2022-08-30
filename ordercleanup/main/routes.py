@@ -5,7 +5,8 @@ from ordercleanup.api_func.cleanup import (
     add_orders_to_route,
     add_status_code_and_change_log, 
     update_driver_id, 
-    get_test_scans
+    get_test_scans,
+    get_master_list
 )
 from ordercleanup import mail
 from ordercleanup.config import config
@@ -92,3 +93,4 @@ def get_report():
 @main.route("/test")
 def test_route():
     return {'TestEnv':config.TESTING, 'Scans': get_test_scans()}
+

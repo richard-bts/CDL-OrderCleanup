@@ -7,7 +7,7 @@ class Orders(db.Model):
     PickupTargetFrom = db.Column(db.DateTime)
     Status = db.Column(db.String(1))
     ServiceID = db.Column(db.Integer)
-    RouteID = db.Column(db.Integer)
+    RouteID = db.Column(db.Integer, nullable=False)
     
 
 class OrderScans(db.Model):
