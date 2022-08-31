@@ -1,3 +1,4 @@
+from turtle import update
 from flask import render_template, request, Blueprint
 from datetime import date, datetime
 from sqlalchemy import Date
@@ -92,5 +93,6 @@ def get_report():
 
 @main.route("/test")
 def test_route():
-    return {'TestEnv':config.TESTING, 'Scans': get_test_scans()}
+    # update_driver, new_driver = update_driver_id()
+    return {'TestEnv':config.TESTING, 'Update': get_master_list()}
 

@@ -25,12 +25,23 @@ class OrderDrivers(db.Model):
     OrderTrackingID = db.Column(db.Integer, primary_key=True)
     ArchiveLevel = db.Column(db.Integer, primary_key=True)
     DriverID = db.Column(db.Integer, primary_key=True)
+    Status = db.Column(db.String(1))
+    isDefaultDriver = db.Column(db.Integer)
+    Pickup = db.Column(db.Integer)
+    Delivery = db.Column(db.Integer)
+    UserID = db.Column(db.Integer)
 
+   
     def to_json(self):
         return {
             'OrderTrackingID': self.OrderTrackingID,
             'ArchiveLevel': self.ArchiveLevel,
-            'DriverID': self.DriverID
+            'DriverID': self.DriverID,
+            'Status':self.Status,
+            'isDefaultDriver':self.isDefaultDriver,
+            'Pickup':self.Pickup,
+            'Delivery':self.Delivery,
+            'UserID':self.UserID
         }
 
 class OrderChangeLog(db.Model):
