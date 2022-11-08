@@ -3,3 +3,7 @@ CDL_OrderCleanup/*
 CDL_OrderCleanup/
 __pycache__/
 *.xlsx
+.env
+web.config 
+*.txt
+sequence.py
