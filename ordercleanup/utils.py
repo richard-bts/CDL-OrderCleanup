@@ -20,3 +20,5 @@ def send_error_email():
         file = open(file_name, 'rb')
         msg.attach(file_name, 'text/plain', file.read())
     mail.send(msg)
+
+    #test
